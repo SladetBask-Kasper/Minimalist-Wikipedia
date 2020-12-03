@@ -1,0 +1,2 @@
+# Minimalist-Wikipedia
+Minimalist Wikipedia
