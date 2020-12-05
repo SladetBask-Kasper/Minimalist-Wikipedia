@@ -3,7 +3,7 @@
 
 	"name": "Minimalist Wikipedia",
 	"description": "This extention will add make it so when you click on the extention icon it will toggle between normal desktop Wikipedia and the minimalist mobile version of Wikipedia. Information about the logo used and license infromation can be found at https://en.wikipedia.org/wiki/File:Tango_style_Wikipedia_Icon.svg",
-	"version": "1.1",
+	"version": "2.0",
 	"background": {
 		"scripts": ["background.js"]
 	},
@@ -13,16 +13,23 @@
 		"webRequest",
 		"*://*.wikipedia.org/",
 		"*://wikipedia.org/",
+
+		"*://*.wiktionary.org/",
+		"*://wiktionary.org/",
+		
+		"*://*.wikiversity.org/*", "*://*.wikibooks.org/*", "*://*.wikiquote.org/*",
+    	"*://*.wikinews.org/*", "*://*.wikisource.org/*", "*://*.wikidata.org/*", 
+    	"*://mediawiki.org/*", "*://*.wikivoyage.org/*",
 		"webRequestBlocking"
 	],
 	"icons": { 
-			"16": "icon_tiny.png",
-			"19": "icon_small.png",
-			"48": "icon_med.png",
+			"16": "icon16.png",
+			"19": "icon19.png",
+			"48": "icon48.png",
+			"64": "icon64.png",
 			"128": "icon.png" },
 	"browser_action": {
 		"default_icon": "icon.png",
-
 		"default_title": "Click to toggle minimalist Wikipedia"
 	}
 }
